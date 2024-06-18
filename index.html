@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/tab.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -86,10 +87,24 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Where I’ve Worked</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
+									<div class="tab">
+										<button class="tablinks" data-city="IFS" id="defaultOpen">IFS</button>
+  										<button class="tablinks" data-city="Epic">Epic</button>
+									  </div>
+									  
+									  <div id="IFS" class="tabcontent">
+										<h3>IFS</h3>
+										<p>Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</p>
+									  </div>
+									  
+									  <div id="Epic" class="tabcontent">
+										<h3>Epic Technologies</h3>
+										<p>Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</p> 
+									  </div>
+									  
+									<!-- <ul class="actions">
 										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
+									</ul> -->
 								</div>
 							</div>
 						</section>

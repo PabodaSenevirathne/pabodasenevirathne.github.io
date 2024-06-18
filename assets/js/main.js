@@ -167,6 +167,44 @@
 
 			});
 
+
+    // Tabs
+			
+    // $(document).ready(function() {
+	// 	function openCity(cityName) {
+	// 	  $(".tabcontent").hide();
+	// 	  $(".tablinks").removeClass("active");
+	// 	  $("#" + cityName).show();
+	// 	  $("button[data-city='" + cityName + "']").addClass("active");
+	// 	}
+	  
+	// 	$(".tablinks").click(function() {
+	// 	  var cityName = $(this).data("city");
+	// 	  openCity(cityName);
+	// 	});
+	  
+	// 	// Trigger click on the default open tab
+	// 	$("#defaultOpen").click();
+	//   });
+
+
+	$(document).ready(function() {
+		function openCompany(companyName) {
+		  $(".tabcontent").hide();
+		  $(".tablinks").removeClass("active");
+		  $("#" + companyName).show();
+		  $("button[data-city='" + companyName + "']").addClass("active");
+		}
+	  
+		$(".tablinks").click(function() {
+		  var companyName = $(this).data("city");
+		  openCompany(companyName);
+		});
+	  
+		// Trigger click on the default open tab
+		$("#defaultOpen").click();
+	  });
+
 	// Features.
 		$('.features')
 			.scrollex({
